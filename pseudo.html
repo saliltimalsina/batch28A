@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      /* selector:pseudo-class{
+
+    }
+    selector::pseudo-element{
+
+    } */
+      a:link {
+        color: black;
+        text-decoration: none;
+      }
+      /* a:visited {
+        color: blue;
+      }
+
+      a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: green;
+      }
+
+      tr:hover {
+        background-color: rgb(224, 236, 231);
+      }
+
+      tr:nth-child(even) {
+        background-color: hotpink;
+      }
+      input:focus {
+        background-color: indigo;
+      }
+      p::first-letter {
+        font-size: 50px;
+        color: red;
+      }
+      p::first-line {
+        font-size: 50px;
+      }
+      .pseudo::after {
+        content: " this is after";
+      }
+      ::selection {
+        background-color: indigo;
+      }
+      ::marker {
+        color: red;
+      }
+      li {
+        color: green;
+      } */
+
+      /* selector[attribute="value"]{
+
+      } */
+
+      a[target="_blank"] {
+        background-color: black;
+        color: white;
+        margin: 15px;
+        padding: 15px;
+      }
+
+      a[target="_self"] {
+        background-color: green;
+        color: white;
+        margin-top: 45px;
+        padding: 15px;
+      }
+
+      input[type="text"] {
+        border: 2px solid red;
+      }
+
+      input[type="button"] {
+        background-color: green;
+        border: none;
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 10px;
+        color: white;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class and Pseudo Elements</title>
+  </head>
+  <body>
+    <h1 class="pseudo">Psuedo Classes</h1>
+    <a href="https://www.google.com" target="_blank">Blank Link</a><br /><br />
+    <a href="#" target="_self">Self Link</a> <br /><br />
+    <a href="https://campus.softwarica.edu.np">Campus 4.0</a>
+
+    <h1>Table</h1>
+    <table border="1">
+      <tr>
+        <th rowspan="2">SN</th>
+        <th rowspan="2">Company Name</th>
+        <th colspan="2">2076-77</th>
+        <th colspan="2">2075-76</th>
+        <th colspan="2">2074-75</th>
+        <th colspan="2">2073-74</th>
+      </tr>
+      <tr>
+        <th>Stock %</th>
+        <th>Cash %</th>
+        <th>Stock %</th>
+        <th>Cash %</th>
+        <th>Stock %</th>
+        <th>Cash %</th>
+        <th>Stock %</th>
+        <th>Cash %</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td> Barghav Bikas Bank</td>
+        <td colspan="4">Merged</td>
+        <td>0</td>
+        <td>6</td>
+        <td>5.66</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td> Barghav Bikas Bank</td>
+        <td colspan="4">Merged</td>
+        <td>0</td>
+        <td>6</td>
+        <td>5.66</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td> Barghav Bikas Bank</td>
+        <td colspan="4">Merged</td>
+        <td>0</td>
+        <td>6</td>
+        <td>5.66</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td> Barghav Bikas Bank</td>
+        <td colspan="4">Merged</td>
+        <td>0</td>
+        <td>6</td>
+        <td>5.66</td>
+        <td>25</td>
+      </tr>
+    </table>
+
+    <h1>Form</h1>
+    <form>
+      <input type="text" />
+      <input type="button" value="Login" />
+    </form>
+
+    <h1>Pseudo Elements</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+      cupiditate non vitae omnis esse quasi, quam facilis quisquam atque sed
+      assumenda consectetur ipsum tempora inventore ex accusamus porro. Alias
+      accusantium repellat esse impedit mollitia, enim fugit numquam quos,
+      soluta fuga qui, voluptates reiciendis eius accusamus odit officiis ullam
+      corrupti similique officia eveniet modi voluptatibus? Commodi, doloremque
+      non. Nobis quasi iusto tenetur non aliquid dolorem quod eligendi
+      praesentium corrupti laborum possimus, impedit ratione reiciendis optio
+      quis? Ea officiis accusamus esse nam nemo et voluptatem illo dicta!
+    </p>
+
+    <h1>Unordered Lists</h1>
+    <ul style="list-style-type: disc">
+      <li>Bsc Hons Computing</li>
+      <li>Bsc Hons Ethical Hacking</li>
+      <ul>
+        <li>Ethical hacking 1</li>
+        <li>Ethical Hacking 2</li>
+      </ul>
+      <li>BBA</li>
+    </ul>
+  </body>
+</html>
