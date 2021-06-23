@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .second,
+        .child,
+        .third {
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            border: 1px solid green;
+        }
+
+        .parent {
+            position: relative;
+            border: 1px solid red;
+            height: 500px;
+        }
+
+        #abs {
+            position: absolute;
+            background-color: blue;
+            right: 0;
+            bottom: 0;
+        }
+
+        #thi {
+            background-color: blueviolet;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+</head>
+
+<body>
+    <h1>Absolute Test</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum voluptates, labore eligendi, dolore ea
+        iste reiciendis voluptas obcaecati atque libero architecto ipsa aperiam enim modi sapiente laudantium culpa
+        corporis dolorum a voluptatibus molestias! Veritatis soluta quo autem porro, illum quasi. Eum quae unde
+        reprehenderit quibusdam non blanditiis in laboriosam!</p>
+    <div class="parent">
+        <div class="child">First</div>
+        <div class="second" id="abs">Second</div>
+        <div class="third" id="thi">Third</div>
+    </div>
+
+</body>
+
+</html>
